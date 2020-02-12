@@ -23,6 +23,7 @@ public extension MKMapView {
     func zoom(to coordinates: [CLLocationCoordinate2D], meter: Double, edgePadding: EdgeInsets, animated: Bool) {
         guard !coordinates.isEmpty else { return }
 
+        print("test")
         if coordinates.count == 1 {
             let coordinateRegion = MKCoordinateRegion(center: coordinates.first!, latitudinalMeters: meter, longitudinalMeters: meter)
             setRegion(coordinateRegion, animated: true)
