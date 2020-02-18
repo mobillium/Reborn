@@ -1,0 +1,42 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - .git
+
+# Disable Rules
+disabled_rules:
+  - block_based_kvo # for observeValue methods
+  - multiple_closures_with_trailing_closure
+
+line_length:
+  warning: 150
+  error: 160
+
+type_body_length:
+  warning: 220
+  error: 250
+
+# Max function body
+function_body_length:
+  - 140
+  - 180
+
+# Nested complex code
+cyclomatic_complexity:
+- 9 # warning
+- 11 # error
+
+closure_body_length:
+  warning: 20
+  error: 50
+
+# Force cast
+# let exampleString = "1"
+# let exampleInt = (exampleString as! NSString).integerValue
+force_cast: warning
+
+# Mark indentation
+# ex: // MARK : -
+invalid_mark_format:
+    name: "Invalid MARK Format"
+    regex: '(?m-s)(\/\/[\s]*?MARK(?!(\:[\s]{1}\-[\s]{1}){1}))'
+    message: "Use format: MARK: - Your Info"
+    severity: warning%

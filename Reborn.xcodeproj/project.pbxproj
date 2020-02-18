@@ -155,6 +155,7 @@
 				D9474DBA23F14A610053FFF5 /* Sources */,
 				D9474DBB23F14A610053FFF5 /* Frameworks */,
 				D9474DBC23F14A610053FFF5 /* Resources */,
+				D960BF5723FC293400F826B3 /* Swiflint */,
 			);
 			buildRules = (
 			);
@@ -260,6 +261,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "SH_PATH=\"$PROJECT_DIR/build-framework.sh\"\nchmod +x \"$SH_PATH\"\n./build-framework.sh\n";
+		};
+		D960BF5723FC293400F826B3 /* Swiflint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiflint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, Run the following command now: brew install swiftlint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

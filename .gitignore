@@ -144,4 +144,6 @@ Dependencies/
 ### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+Reborn.framework/
+
 # End of https://www.gitignore.io/api/xcode,swift,cocoapods,objective-c

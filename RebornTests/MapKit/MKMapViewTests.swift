@@ -16,7 +16,7 @@ import struct CoreLocation.CLLocationCoordinate2D
 #if !os(watchOS)
 @available(tvOS 9.2, *)
 final class MKMapViewTests: XCTestCase {
-    
+
     func testWithEmptyItemArray() {
         let mapView = MKMapView()
         let meter = 500.0
