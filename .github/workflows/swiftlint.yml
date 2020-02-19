@@ -2,9 +2,10 @@ name: SwiftLint
 
 on:
   pull_request:
-    branches:
-      - master
-      - feature/*
+    paths:
+      - '.github/workflows/swiftlint.yml'
+      - '.swiftlint.yml'
+      - '**/*.swift'
 
 jobs:
   SwiftLint:
@@ -21,13 +22,3 @@ jobs:
         uses: norio-nomura/action-swiftlint@3.1.0
         env:
           DIFF_BASE: ${{ github.base_ref }}
-
-Swiftlint:
-    runs-on: [macos]
-    name: SwiftLint
-    steps: 
-      - uses: actions/checkout@v1
-      - name: SwiftLint
-        run: |
-          brew install swiftlint
-          swiftlint
