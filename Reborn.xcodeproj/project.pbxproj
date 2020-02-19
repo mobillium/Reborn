@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		91D0761723FC31FE002F222D /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0761623FC31FE002F222D /* StringTests.swift */; };
+		91D0761A23FC32A4002F222D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0761923FC32A4002F222D /* StringExtensions.swift */; };
 		D9474DC323F14A610053FFF5 /* Reborn.h in Headers */ = {isa = PBXBuildFile; fileRef = D9474DC123F14A610053FFF5 /* Reborn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9474DCC23F14FBD0053FFF5 /* MKMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9474DCB23F14FBD0053FFF5 /* MKMapViewExtensions.swift */; };
 		D9474DCF23F150030053FFF5 /* EdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9474DCE23F150030053FFF5 /* EdgeInsetsExtensions.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91D0761623FC31FE002F222D /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		91D0761923FC32A4002F222D /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		D9474DBE23F14A610053FFF5 /* Reborn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reborn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9474DC123F14A610053FFF5 /* Reborn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reborn.h; sourceTree = "<group>"; };
 		D9474DC223F14A610053FFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +74,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91D0761523FC31B3002F222D /* String */ = {
+			isa = PBXGroup;
+			children = (
+				91D0761623FC31FE002F222D /* StringTests.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		91D0761823FC3235002F222D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				91D0761923FC32A4002F222D /* StringExtensions.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		D9474DB423F14A610053FFF5 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +111,7 @@
 		D9474DC023F14A610053FFF5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				91D0761823FC3235002F222D /* Foundation */,
 				D9474DCD23F14FEA0053FFF5 /* Shared */,
 				D9474DCA23F14F9B0053FFF5 /* MapKit */,
 				D9474DC123F14A610053FFF5 /* Reborn.h */,
@@ -118,6 +139,7 @@
 		D9474DD823F151030053FFF5 /* RebornTests */ = {
 			isa = PBXGroup;
 			children = (
+				91D0761523FC31B3002F222D /* String */,
 				D9474DE223F151160053FFF5 /* MapKit */,
 				D9474DD923F151030053FFF5 /* RebornTests.swift */,
 				D9474DDB23F151030053FFF5 /* Info.plist */,
@@ -287,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D0761A23FC32A4002F222D /* StringExtensions.swift in Sources */,
 				D9474DCF23F150030053FFF5 /* EdgeInsetsExtensions.swift in Sources */,
 				D9474DCC23F14FBD0053FFF5 /* MKMapViewExtensions.swift in Sources */,
 			);
@@ -297,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9474DDA23F151030053FFF5 /* RebornTests.swift in Sources */,
+				91D0761723FC31FE002F222D /* StringTests.swift in Sources */,
 				D9474DE523F151380053FFF5 /* MKMapViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
