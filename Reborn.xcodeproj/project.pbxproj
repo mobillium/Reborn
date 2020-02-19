@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		68A6680323FC317900FC9E4D /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A6680223FC317900FC9E4D /* UIViewControllerTests.swift */; };
+		68A6680623FC322200FC9E4D /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A6680523FC322200FC9E4D /* UIViewControllerExtensions.swift */; };
 		D9474DC323F14A610053FFF5 /* Reborn.h in Headers */ = {isa = PBXBuildFile; fileRef = D9474DC123F14A610053FFF5 /* Reborn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9474DCC23F14FBD0053FFF5 /* MKMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9474DCB23F14FBD0053FFF5 /* MKMapViewExtensions.swift */; };
 		D9474DCF23F150030053FFF5 /* EdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9474DCE23F150030053FFF5 /* EdgeInsetsExtensions.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68A6680223FC317900FC9E4D /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
+		68A6680523FC322200FC9E4D /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		D9474DBE23F14A610053FFF5 /* Reborn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reborn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9474DC123F14A610053FFF5 /* Reborn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reborn.h; sourceTree = "<group>"; };
 		D9474DC223F14A610053FFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +74,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68A6680123FC316100FC9E4D /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				68A6680223FC317900FC9E4D /* UIViewControllerTests.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		68A6680423FC320900FC9E4D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				68A6680523FC322200FC9E4D /* UIViewControllerExtensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		D9474DB423F14A610053FFF5 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				D9474DCD23F14FEA0053FFF5 /* Shared */,
+				68A6680423FC320900FC9E4D /* UIKit */,
 				D9474DCA23F14F9B0053FFF5 /* MapKit */,
 				D9474DC123F14A610053FFF5 /* Reborn.h */,
 				D9474DC223F14A610053FFF5 /* Info.plist */,
@@ -118,6 +139,7 @@
 		D9474DD823F151030053FFF5 /* RebornTests */ = {
 			isa = PBXGroup;
 			children = (
+				68A6680123FC316100FC9E4D /* UIViewController */,
 				D9474DE223F151160053FFF5 /* MapKit */,
 				D9474DD923F151030053FFF5 /* RebornTests.swift */,
 				D9474DDB23F151030053FFF5 /* Info.plist */,
@@ -289,6 +311,7 @@
 			files = (
 				D9474DCF23F150030053FFF5 /* EdgeInsetsExtensions.swift in Sources */,
 				D9474DCC23F14FBD0053FFF5 /* MKMapViewExtensions.swift in Sources */,
+				68A6680623FC322200FC9E4D /* UIViewControllerExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +321,7 @@
 			files = (
 				D9474DDA23F151030053FFF5 /* RebornTests.swift in Sources */,
 				D9474DE523F151380053FFF5 /* MKMapViewTests.swift in Sources */,
+				68A6680323FC317900FC9E4D /* UIViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
