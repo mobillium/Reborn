@@ -15,14 +15,4 @@ final class UIViewControllerTests: XCTestCase {
         let identifier = UIViewController.identifier
         XCTAssertEqual(identifier, "UIViewController")
     }
-    
-    func testWithController() {
-        XCTAssertEqual(TestClass.identifier, "TestClass")
-    }
-
-}
-
-//MARK: - Test Class
-class TestClass: UIViewController {
-    
 }
