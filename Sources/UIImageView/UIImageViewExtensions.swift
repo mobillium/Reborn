@@ -10,15 +10,13 @@
 import UIKit
 
 #if !os(watchOS)
-@available(tvOS 9.0, *)
 public extension UIImageView {
-    
+
     /// Generates QR Code from the string and sets the qr code image to your UIImageView.
     ///
     /// - Parameters:
     ///   - qrString: The string that you want to transform to QR Code.
-    convenience init(with qrString: String) {
-        self.init()
+    func generateQrCode(qrString: String) {
         let data = qrString.data(using: String.Encoding.ascii)
         if let filter = CIFilter(name: "CIQRCodeGenerator") {
             filter.setValue(data, forKey: "inputMessage")
@@ -29,7 +27,6 @@ public extension UIImageView {
         }
     }
 }
-
 
 #endif
 
