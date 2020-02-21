@@ -8,11 +8,9 @@
 
 #if canImport(Foundation)
 import Foundation
-#endif
 
 public extension Decodable {
 
-    #if canImport(Foundation)
     /// Parsing the model in Decodable type
     /// - Parameters:
     ///   - data: Data.
@@ -21,5 +19,5 @@ public extension Decodable {
         guard let parsed = try? decoder.decode(Self.self, from: data) else { return nil }
         self = parsed
     }
-    #endif
 }
+#endif
