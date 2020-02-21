@@ -18,11 +18,11 @@ public extension String {
     ///   - replacement: Substring that we want to replace with.
     ///   - maxReplacements: Fix number of substring that we want to replace.
     /// - Returns: Give the new string with all replacements (if exists).
-    func replacingOccurrences(of search: String, with replacement: String, count maxReplacements: Int) -> String {
+    func replacingOccurrences(of target: String, with replacement: String, count maxReplacements: Int) -> String {
         var count = 0
         var returnValue = self
 
-        while let range = returnValue.range(of: search) {
+        while let range = returnValue.range(of: target) {
             returnValue = returnValue.replacingCharacters(in: range, with: replacement)
             count += 1
             
