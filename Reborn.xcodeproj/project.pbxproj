@@ -27,6 +27,8 @@
 		D9474DDA23F151030053FFF5 /* RebornTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9474DD923F151030053FFF5 /* RebornTests.swift */; };
 		D9474DDC23F151030053FFF5 /* Reborn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9474DBE23F14A610053FFF5 /* Reborn.framework */; };
 		D9474DE523F151380053FFF5 /* MKMapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9474DE323F151380053FFF5 /* MKMapViewTests.swift */; };
+		D9A579BD23FD2309002F5457 /* DecodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A579BC23FD2309002F5457 /* DecodableExtensions.swift */; };
+		D9A579C023FD234E002F5457 /* DecodableExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A579BF23FD234E002F5457 /* DecodableExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D9474DD923F151030053FFF5 /* RebornTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RebornTests.swift; sourceTree = "<group>"; };
 		D9474DDB23F151030053FFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9474DE323F151380053FFF5 /* MKMapViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewTests.swift; sourceTree = "<group>"; };
+		D9A579BC23FD2309002F5457 /* DecodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableExtensions.swift; sourceTree = "<group>"; };
+		D9A579BF23FD234E002F5457 /* DecodableExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		D9474DC023F14A610053FFF5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D9A579BB23FD22D8002F5457 /* SwiftStdlib */,
 				D9474DCD23F14FEA0053FFF5 /* Shared */,
 				D9474DCA23F14F9B0053FFF5 /* MapKit */,
 				D9474DC123F14A610053FFF5 /* Reborn.h */,
@@ -118,6 +123,7 @@
 		D9474DD823F151030053FFF5 /* RebornTests */ = {
 			isa = PBXGroup;
 			children = (
+				D9A579BE23FD2327002F5457 /* SwiftStdlib */,
 				D9474DE223F151160053FFF5 /* MapKit */,
 				D9474DD923F151030053FFF5 /* RebornTests.swift */,
 				D9474DDB23F151030053FFF5 /* Info.plist */,
@@ -131,6 +137,22 @@
 				D9474DE323F151380053FFF5 /* MKMapViewTests.swift */,
 			);
 			path = MapKit;
+			sourceTree = "<group>";
+		};
+		D9A579BB23FD22D8002F5457 /* SwiftStdlib */ = {
+			isa = PBXGroup;
+			children = (
+				D9A579BC23FD2309002F5457 /* DecodableExtensions.swift */,
+			);
+			path = SwiftStdlib;
+			sourceTree = "<group>";
+		};
+		D9A579BE23FD2327002F5457 /* SwiftStdlib */ = {
+			isa = PBXGroup;
+			children = (
+				D9A579BF23FD234E002F5457 /* DecodableExtensionsTests.swift */,
+			);
+			path = SwiftStdlib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +311,7 @@
 			files = (
 				D9474DCF23F150030053FFF5 /* EdgeInsetsExtensions.swift in Sources */,
 				D9474DCC23F14FBD0053FFF5 /* MKMapViewExtensions.swift in Sources */,
+				D9A579BD23FD2309002F5457 /* DecodableExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9474DDA23F151030053FFF5 /* RebornTests.swift in Sources */,
+				D9A579C023FD234E002F5457 /* DecodableExtensionsTests.swift in Sources */,
 				D9474DE523F151380053FFF5 /* MKMapViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
