@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		91D0761723FC31FE002F222D /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0761623FC31FE002F222D /* StringTests.swift */; };
+		91D0761A23FC32A4002F222D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0761923FC32A4002F222D /* StringExtensions.swift */; };
 		98154A9B23FD14A7001CFA2B /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98154A9A23FD14A7001CFA2B /* UIViewExtensions.swift */; };
 		D9474DC323F14A610053FFF5 /* Reborn.h in Headers */ = {isa = PBXBuildFile; fileRef = D9474DC123F14A610053FFF5 /* Reborn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9474DCC23F14FBD0053FFF5 /* MKMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9474DCB23F14FBD0053FFF5 /* MKMapViewExtensions.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91D0761623FC31FE002F222D /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		91D0761923FC32A4002F222D /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		98154A9A23FD14A7001CFA2B /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		D9474DBE23F14A610053FFF5 /* Reborn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reborn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9474DC123F14A610053FFF5 /* Reborn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reborn.h; sourceTree = "<group>"; };
@@ -80,6 +84,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91D0761523FC31B3002F222D /* String */ = {
+			isa = PBXGroup;
+			children = (
+				91D0761623FC31FE002F222D /* StringTests.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		91D0761823FC3235002F222D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				91D0761923FC32A4002F222D /* StringExtensions.swift */,
+			);
+			path = Foundation;
 		98154A9923FD1492001CFA2B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +127,7 @@
 		D9474DC023F14A610053FFF5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				91D0761823FC3235002F222D /* Foundation */,
 				98154A9923FD1492001CFA2B /* UIKit */,
 				FB23317323FC32D400D428AA /* UIImageView */,
 				D9A579BB23FD22D8002F5457 /* SwiftStdlib */,
@@ -139,6 +158,7 @@
 		D9474DD823F151030053FFF5 /* RebornTests */ = {
 			isa = PBXGroup;
 			children = (
+				91D0761523FC31B3002F222D /* String */,
 				FB23317623FC359500D428AA /* UIImageView */,
 				D9A579BE23FD2327002F5457 /* SwiftStdlib */,
 				D9474DE223F151160053FFF5 /* MapKit */,
@@ -342,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D0761A23FC32A4002F222D /* StringExtensions.swift in Sources */,
 				D9474DCF23F150030053FFF5 /* EdgeInsetsExtensions.swift in Sources */,
 				98154A9B23FD14A7001CFA2B /* UIViewExtensions.swift in Sources */,
 				FB23317523FC32F600D428AA /* UIImageViewExtensions.swift in Sources */,
@@ -356,6 +377,7 @@
 			files = (
 				FB23317823FC35B100D428AA /* UIImageViewTests.swift in Sources */,
 				D9474DDA23F151030053FFF5 /* RebornTests.swift in Sources */,
+				91D0761723FC31FE002F222D /* StringTests.swift in Sources */,
 				D9A579C023FD234E002F5457 /* DecodableExtensionsTests.swift in Sources */,
 				D9474DE523F151380053FFF5 /* MKMapViewTests.swift in Sources */,
 			);
