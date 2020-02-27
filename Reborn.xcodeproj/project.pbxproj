@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		98154A9B23FD14A7001CFA2B /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98154A9A23FD14A7001CFA2B /* UIViewExtensions.swift */; };
 		D9474DC323F14A610053FFF5 /* Reborn.h in Headers */ = {isa = PBXBuildFile; fileRef = D9474DC123F14A610053FFF5 /* Reborn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9474DCC23F14FBD0053FFF5 /* MKMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9474DCB23F14FBD0053FFF5 /* MKMapViewExtensions.swift */; };
 		D9474DCF23F150030053FFF5 /* EdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9474DCE23F150030053FFF5 /* EdgeInsetsExtensions.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98154A9A23FD14A7001CFA2B /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		D9474DBE23F14A610053FFF5 /* Reborn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reborn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9474DC123F14A610053FFF5 /* Reborn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reborn.h; sourceTree = "<group>"; };
 		D9474DC223F14A610053FFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98154A9923FD1492001CFA2B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				98154A9A23FD14A7001CFA2B /* UIViewExtensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		D9474DB423F14A610053FFF5 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		D9474DC023F14A610053FFF5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				98154A9923FD1492001CFA2B /* UIKit */,
 				FB23317323FC32D400D428AA /* UIImageView */,
 				D9A579BB23FD22D8002F5457 /* SwiftStdlib */,
 				D9474DCD23F14FEA0053FFF5 /* Shared */,
@@ -332,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9474DCF23F150030053FFF5 /* EdgeInsetsExtensions.swift in Sources */,
+				98154A9B23FD14A7001CFA2B /* UIViewExtensions.swift in Sources */,
 				FB23317523FC32F600D428AA /* UIImageViewExtensions.swift in Sources */,
 				D9474DCC23F14FBD0053FFF5 /* MKMapViewExtensions.swift in Sources */,
 				D9A579BD23FD2309002F5457 /* DecodableExtensions.swift in Sources */,
